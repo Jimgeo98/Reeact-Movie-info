@@ -1,0 +1,167 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #192a56;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header{
+    background-color:#706fd3;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .search{
+    font-family: inherit;
+    background: transparent;
+    width: 450px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #192a56;
+}
+
+header .search:focus {
+    outline: none;
+}
+
+header .btn {
+    width: 20%;
+    height: 100%;
+    border: 5px solid #192a56;
+    background-color: #1dd1a1;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+header .btn:hover{
+    background-color: #eb4d4b;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color:#706fd3;
+    border-radius: 15px;
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+    width: 300px; 
+    margin-top: 100px;
+}
+
+.movie img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info h3{
+    font-size: 17px;
+    color:#fff;
+}
+
+.info h4 i{
+    margin-left: 15px;
+}
+
+.tag{
+    background-color: #192a56;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.tag.green{
+    color: #32ff7e;
+}
+
+.tag.orange{
+    color: #ff9f1a;
+}
+
+.tag.red{
+    color: #ff3838;
+}
+
+.overview{
+    background-color: #dff9fb;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    color: #192a56;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+
+.movie:hover .overview{
+    transform: translateX(0%);
+    cursor: pointer;
+}
+
+.movie:hover{
+    transform: translateY(-12px);
+    cursor: pointer;
+}
+
+.overview h2{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 380px) {
+    header .search{
+        width: 250px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    header .search{
+        width: 280px;
+        font-size: 14px;
+    }
+
+}
