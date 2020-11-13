@@ -63,6 +63,14 @@ header .btn:hover{
     color: #fff;
 }
 
+header .btn:focus{
+    outline: none;
+}
+
+header .btn:active{
+    transform: scale(0.95);
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
