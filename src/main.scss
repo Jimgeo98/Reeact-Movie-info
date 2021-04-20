@@ -42,11 +42,12 @@ header .search{
     font-size: 18px;
     color: #fff;
     background-color: #192a56;
+
+    &:focus{
+        outline: none;
+    }
 }
 
-header .search:focus {
-    outline: none;
-}
 
 header .btn {
     width: 20%;
@@ -56,20 +57,21 @@ header .btn {
     border-radius: 15px;
     cursor: pointer;
     font-size: 20px;
-}
 
-header .btn:hover{
-    background-color: #eb4d4b;
+    &:hover{
+        background-color: #eb4d4b;
     color: #fff;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
 }
 
-header .btn:focus{
-    outline: none;
-}
-
-header .btn:active{
-    transform: scale(0.95);
-}
 
 .container{
     display: flex;
